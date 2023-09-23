@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Your Name or Pet Name</title>
+<style>
+	#search{
+		width: 500px;
+		height: 40px;
+		margin-top: 250px;
+		border-radius:5px;   
+		box-shadow:0 0 10px;
+		}
+	.srch{
+		height: 40px;
+		width: 100px;
+		background-color: gray;
+		align-items: center;
+		border-radius:2px;
+		}
+	div{
+	height: 600px;
+	background-image : url("minion.jpg");
+	background-size: 1500px 600px;
+	  background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body>
+<div>
+<form><center>
+	<input type="text" value="" id="search" autofocus placeholder="Enter Your name or Pet Name" autocomplete="off">
+	<br><br>
+	<button class="srch" onclick="pranikaa()">Search</button>
+	</center></form></div>
+</body>
+<script>
+	function pranikaa(){
+	var a = document.getElementById('search').value;
+	if((a=='Pranikaa')||(a=='pranikaa')||(a=='Pakkhi')||(a=='pakkhi')||(a=='Pakhi')||(a=='pakhi'))
+	window.open("https://karthikeyan1630.github.io/sk6/");
+	else
+	alert('Wrong Input');
+	}
+</script>
+</html>
